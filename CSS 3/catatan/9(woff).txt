@@ -1,0 +1,6 @@
+WOFF / WOFF 2
+*Web Open File Format
+*Dikembangkan oleh Mozilla
+*Dibuat khusus untuk website
+*Diload lebih cepat daripada jenis font yang lain
+*Merupakan kompresi dari tipe TTF / OTF

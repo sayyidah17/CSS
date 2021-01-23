@@ -1,0 +1,4 @@
+ linear-gradient:bukan property css3, melainkan value untuk background-image
+
+ Sintak:
+ background-image:linear-gradient(warna awal, warna akhir);

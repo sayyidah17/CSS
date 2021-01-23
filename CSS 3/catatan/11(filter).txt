@@ -1,0 +1,11 @@
+Filter
+blur(px)
+brightness(angka | %)
+contrast(angka | %)
+saturate(angka | %)
+grayscale(angka | %)
+sepia(angka | %)
+hue-rotate(deg)
+invert(angka | %)
+opacity(angka | %)
+drop-shadow(sama seperti box-shadow)

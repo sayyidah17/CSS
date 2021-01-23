@@ -1,0 +1,22 @@
+color
+ memberi warna pada tulisan
+text-align
+ mengatur format paragraf/teks
+text-indent
+ memberi indentansi pada paragraf/teks
+text-decoration
+ mengatur dekorasi pada teks
+text-transform
+ mengubah jenis huruf besar, kecil/kapital
+letter-spacing
+ mengatur spasi antar huruf
+word-spacing
+ mengatur spasi antar kata
+
+
+text-aling :left right center justify;
+text-indent:% px;
+text-decoration:none underline overline line-through;
+text-transform:none, uppercase, lowercase, capitalize;
+letter-spacing:normal px;
+word-spacing:normal px;

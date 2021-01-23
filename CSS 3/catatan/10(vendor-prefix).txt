@@ -1,0 +1,15 @@
+vendor-prefix adalah sintaks khusus yang harus ditambahkan untuk beberapa property CSS3
+
+vendor-prefixes
+-webkit-<properti-css3> : Chrome,Safari,Opera versi baru
+-moz-<properti-css3>    : Mozzila firefox
+-ms-<properti-css3>     : Internet Explorer
+-o-<properti-css3>      : Operasi versi lama
+
+Kenapa harus menggunakan vendor prefixes?
+Karena tidak semua browser support CSS3
+
+Web untuk mengecek vendor prefixes:
+http://shouldiprefix.com/#font-face
+https://caniuse.com/
+http://pleeease.io/play/

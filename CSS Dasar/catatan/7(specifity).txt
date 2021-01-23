@@ -1,0 +1,2 @@
+Setiap deklarasi css (selector) memiliki berat yang berbeda. Berat tersebut menentukan beberapa spesifik 
+sebuah element dapat dipilih oleh selector

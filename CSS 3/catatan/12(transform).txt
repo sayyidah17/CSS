@@ -1,0 +1,5 @@
+Fungsi Transformasi
+scale     :memperbesar / memperkecil
+rotate    :memutar
+skew      :membuat condong / miring
+translate :mengubah posisi
