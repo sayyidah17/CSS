@@ -1,0 +1,111 @@
+Flexbox
+
+
+flexbox=fleksibel box
+Model layout 1 dimensi yang dapat mengatur jarak dan penjajaran antar item dalam sebuah container.
+
+1 Dimensi?
+Hanya dapat mengatur 1 dimensi pada saat tertentu, antara baris atau kolom, tidak bisa keduanya sekaligus.
+
+2 Dimensi?
+CSS Grid
+
+Flexbox Layout Module
+
+Sebuah modul yang menawarkan cara yang efektif untuk menyusun, mensejajarkan dan mendistribusikan jarak antar item di dalam sebuah container, meskipun ukurannya dinamis atau bahkan kita tidak tau.
+
+Istilah-istilah dalam flexbox
+
+container=Wadahnya
+items=isinya
+main axis=elemennya sejajar secara horizontal
+cross axis=elemennya sejajar secar vertikal
+main size=ukuran dari containernya disebut main size (panjang)
+cross size=ukuran dari columnya disebut cross size(lebar)
+
+main  start=untuk menentukan awal dari elemennya secara horizontal
+main    end=untuk menentukan akhir dari elemennya secara horizontal
+cross start=untuk menentukan akhir dari elemennya secara vertikal
+cross   end=untuk menentukan akhir dari elemennya secara vertikal
+
+main axis             =Sumbu utama dari sebuah container yang menentukan urutan dari penempatan items secara horizontal
+main-start | main-end =Mulai dan berakhirnya items yang disimpan di dalam container
+main size			  =Ukuran (width/height) dari container yang akan membuat dimensi dari itemsnya relatif terhadap main size
+
+Property pada container
+
+*display
+.container{
+	display:flex; /*atau inline-flex*/
+}
+Membuat sebuah elemen parent menjadi flex box, dan membuat elemen-elemen di dalamnya bisa berperilaku flex juga
+
+*flex-direction
+
+syntax
+
+Mengatur arah/urutan dari items di dalam container
+flex-direction:row(default) | row-reverse | column | column-reverse
+
+*flex-wrap
+
+Secara default, semua items di dalam container akan berada pada satu baris meskipun ukurannya sudah tidak cukup, wrap memungkinkan untuk memindahkan items ke baris di bawahnya
+
+syntax
+
+flex-wrap:nowrap | wrap | wrap-reverse;
+
+*justify-content
+
+Mengatur jarak antar items
+
+syntax
+
+justify-content:flex-start | flex-end | center | space-between | space-around | space-evenly
+
+*align-items
+	
+Mengatur perilaku penjajaran items terhadap cross axis
+
+syntax
+
+align-items:flex-start | flex-end | center | stretch | baselin;
+
+*align-content
+
+Mengatur jarak antar items terhadap cross axis
+(hanya berfungsi ketika items lebih dari dari 1 baris)
+
+syntax
+
+align-content:flex-start | flex-end | center | space-between | space-around;
+
+Propery pada items 
+
+*order
+
+Untuk megatur urutan dari elemen-elementnya
+
+syntax
+
+.satu{
+	order:2
+}
+
+*flex-grow
+
+Untuk mengatur ukuran dari item nya
+
+syntax
+
+.satu{
+	flex-grow:2;
+}
+
+*align-self
+
+Mengatur perilaku penjajaran sebuah item yang spesifik terhadap cross axis
+
+syntax
+
+align-self:auto | flex-start | flex-end | center | baseline | stretch;

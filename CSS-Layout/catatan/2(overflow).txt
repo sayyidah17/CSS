@@ -1,0 +1,14 @@
+Dimensi dan Overflow
+
+Dimensi
+
+width & height
+      px
+      %=relatif terhadap browser/parentnya
+ in,cm,mm,pt,pc
+
+ Overflow
+ visible(default)=Jika ada konten yang keluar dari parentnya maka akan diperlihatkan
+ auto            =CSS akan menambahkan scroll jika kontennya tidak cukup lagi
+ hidden          =Apabila kontennya melebihi batas maka akan dihilangkan
+ scroll          =Mau kontennya melebihi batas atau tidak tetap akan menambahkan scroll

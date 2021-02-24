@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Flexbox</title>
+	<style type="text/css">
+		.container{
+			width:600px;
+			height:400px;
+			border:5px solid #333;
+			margin:30px auto;
+			padding:5px;
+			box-sizing:border-box;
+			display:flex;
+			/*urutan secara horizontal*/
+			/*flex-direction:row;*/
+			/*urutan secara horizontal namun dibalik urutannya*/
+			/*flex-direction:row-reverse;*/
+			/*urutan secara vertikal*/
+			/*flex-direction:column;*/
+			/*urutan secara vertikal namun dibalik urutannya*/
+			/*flex-direction:column-reverse;*/
+
+			/*wrap*/
+
+			/*tidak ada wrap*/
+			/*flex-wrap:nowrap;*/
+			/*memakai wrap*/
+			/*flex-wrap:wrap;*/
+			/*memakai wrap namun urutannya dibalik*/
+			/*flex-wrap:wrap-reverse;*/
+
+			/*justify-content*/
+			/*kiri*/
+			/*justify-content:flex-start;*/
+			/*kanan*/
+			/*justify-content:flex-end;*/
+			/*tengah*/
+			/*justify-content:center;*/
+			/*elemen awal mepet kiri dan elemen akhir mepet kanan, sisanya dibagi rata */
+			/*justify-content:space-between;*/
+			/*elemen awal setengah kiri dan elemen akhir setengah kanan, sisanya dibagi rata*/
+			/*justify-content:space-around;*/
+			/*ukurannya sama semua*/
+			/*justify-content:space-evenly;*/
+
+			/*align-items*/
+			/*atas*/
+			/*align-items:flex-start;*/
+			/*bawah*/
+			/*align-items:flex-end;*/
+			/*tengah*/
+			/*align-items:center;*/
+			/*apabila elemennya tidak diberi tinggi maka tingginya relatif terhadap containernya*/
+			/*align-items:stretch;*/
+			align-items:baseline;
+
+
+
+		}
+		.container div{
+			width:120px;
+			height:120px;	
+			background-color:rgb(19,133,255);
+			margin:2px;
+		}
+		.container div.tiga{
+			font-size:40px
+		}
+	</style>
+</head>
+<body>
+ <div class="container">
+ 	<div>1</div>
+ 	<div>2</div>
+ 	<div class="tiga">3</div>
+<!--  	<div>4</div>
+ 	<div>5</div>
+ 	<div>6</div> -->
+ </div>
+</body>
+</html>

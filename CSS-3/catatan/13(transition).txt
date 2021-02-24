@@ -1,0 +1,7 @@
+Property transition memungkinkan kita dapat mengubah nilai dari 
+property HTML secara
+halus
+
+transition:[all, nama property, none] [duration:s/ms] [function:ease,ease-in,ease-out,ease-in-out,linear,cubic-bezier(w,x,y,z)] [delay:s/ms];
+
+durasi=s/ms

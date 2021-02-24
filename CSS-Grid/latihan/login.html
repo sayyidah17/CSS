@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dengan Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:"Roboto";
+        }
+        .container{
+            display:grid;
+            grid-template-areas:"left-side right-side";
+        }
+        .left-side{
+            padding:9rem;
+            max-width:800px;
+        }
+        .header{
+            text-align:center;
+            line-height:1.3;
+            margin-bottom:40px;
+        }
+        .header h1{
+            font-size:60px;
+            background:-webkit-linear-gradient(#ff9a9e,#fad0c4);
+            background-clip:text;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            text-transform:uppercase;
+        }   
+        h4{
+            text-transform:uppercase;
+            opacity:0.8;
+        }
+        .input-container i{
+            position:absolute;
+            padding:10px;
+            color:#808080;
+        }
+        input[type=text],[type=password]{
+            width:100%;
+            padding:10px;
+            outline: none;
+            padding:10px;
+            text-align:center;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:20px;
+
+        }
+        input[type=text]:focus{
+            border:2px solid #ff9a9e;
+        }
+        input[type=password]:focus{
+            border:2px solid #ff9a9e;
+        }
+        .btn{
+            background-color:#ff9a9e;
+            border:none;
+            padding:10px;
+            width:100%;
+            opacity:0.9;
+            color:white;
+            border-radius:20px;
+            text-transform:uppercase;
+        }
+        .btn:hover{
+            opacity:1;
+        }
+        p{
+            margin-top:15px;
+            text-align:center;
+        }
+        span{
+            color:#ff9a9e;
+            cursor:pointer;
+        }
+        span:hover{
+            text-decoration:underline;
+        }
+        .separator{
+            display:flex;
+            align-items:center;
+            margin-top:30px;
+        }
+        .block{
+            height:2px;
+            width:280px;
+            background-color:#ccc;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:15px;
+        }
+        .social-media{
+            text-align:center;
+            margin-top:40px;
+        }
+        .icons{
+            padding:15px;
+            margin-right:20px;
+            border:1px solid #ccc;
+            border-radius:50%;
+            margin-top:25px;
+        }
+        .icons:hover{
+            border:1px solid #ff9a9e;
+            transition:0.5s;
+        }
+        .ms{
+            color:#00b2ff;
+        }
+        .gp{
+            color:#db4e39;
+        }
+        .tw{
+            color:#1da1f2;
+        }
+        .ln{
+            color:#2867b2;
+        }
+        .right-side{
+            height:100vh;
+            background:linear-gradient(to bottom,#ff9a9e 0%, #fad0c4 100%);
+
+        }
+        .content{
+            color:white;
+            text-align:center;
+            padding:9rem;
+            margin-top:10%;    
+        }
+        .content h1{
+            text-transform:uppercase;
+            font-size:60px;
+        }
+        h2{
+            text-transform:uppercase ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="header">
+                <h4>Welcome to</h4>
+                <h1>brand name</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus enim eos at fugit, officiis consectetur atque, hic, similique harum eum aspernatur iure sunt inventore aut quaerat. 
+                    Repudiandae voluptas recusandae corrupti.
+                </p>
+            </div>
+            <form action="">
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" class="input-field">   
+                    <br>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" class="input-field">
+                    <button class="btn">sign in</button>
+                    <p>Don't have account? <span>Sign Up Here</span></p>
+                </div>
+            </form>
+
+            <div class="separator">
+                <div class="block"></div>
+                    <p>Or</p>
+                    <div class="block"></div>
+                </div>
+                <div class="social-media">
+                    <p>Continue with social media</p>
+                    <i class="fab fa-facebook-messenger icons ms"></i>
+                    <i class="fab fa-google-plus-g icons gp"></i>
+                    <i class="fab fa-twitter icons tw"></i>
+                    <i class="fab fa-linkedin icons ln"></i>
+                </div>
+        </div>
+        <div class="right-side">
+            <div class="content">
+                <h2>Logo here</h2>
+                <h1>brand name</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam aut voluptatum deserunt, numquam consectetur ullam ipsam perspiciatis doloribus nesciunt voluptates expedita tempore, 
+                    voluptate rerum vitae vel natus quaerat repellendus nulla!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

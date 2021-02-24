@@ -1,0 +1,45 @@
+grid-template-areas
+
+Mendefinisikan grid template menggunakan nama dari area yang ditulis
+pada property grid-area pada item
+
+syntax:
+grid-template-areas:
+"<nama-area> | none | '.' "
+"<nama-area> <nama-area>"
+
+grid-template
+
+Shorthand untuk mendefinisikan grid-template-rows, grid-template-columns, dan grid-template-areas dalam
+satu deklarasi.
+
+*syntax 
+grid-template:<grid-template-rows> | <grid-template-areas> / <grid-template-columns>;
+
+
+grid-column-gap & grid-row-gap (versi lama),
+columns-gap & row-gap(versi baru)
+
+Mendefinisikan ukuran grid-line / jarak antar baris atau kolom
+syntax:
+versi baru
+column-gap:<line-size>;
+row-gap:<line-size>;
+
+versi lama
+grid-column-gap:<line-size>;
+grid-row-gap:<line-size>;   
+
+grid-gap / gap
+
+Shorthand untuk mendefinisikan column-gap, row-gap dalam satu deklarasi.
+
+Syntax
+
+versi baru
+gap:<grid-row-gap> <grid-column-gap>;
+
+versi-lama
+grid-gap:<grid-row-gap> <grid-column-gap>;
+
+Grid

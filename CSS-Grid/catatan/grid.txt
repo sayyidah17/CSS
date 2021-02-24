@@ -1,0 +1,48 @@
+CSS Grid
+
+CSS grid adalah modul css baru untuk mendefinisikan sistem layout
+berbentuk grid dalam 2 dimensi baris dan kolom.
+
+Terminologi CSS Grid
+
+*Grid Container
+ Grid Container adalah element pembungkus grid,didefinisikan dengan menuliskan :
+ display:grid;
+*Grid Item
+ Grid Item adalah element-element yang berada (1 level) di dalam grid container
+*Grid line
+ Grid line adalah gariS horizontal (kolom) atau vertikal (baris)
+ yang memisahkan grid menjadi beberapa bagian dan ditandai dengan angka.
+ Grid line lebih banyak satu daripada jumlah kolomnya.
+*Grid cell
+ Grid cell adalah perpotongan/pertemuan antara baris dan kolom di dalam grid
+*Grid area
+ Grid area adalah kumpulan lebih dari satu grid cell yang membentuk kotak dan tidak boleh ngacak
+*Grid track
+ Grid track adalah ukuran/jarak antara 2 grid line, bisa horizontal (kolom)
+ atau vertikal (baris)   
+*Grid gap
+
+
+CSS Grid Properties
+
+properti ini untuk containernya
+*grid-template-columns
+*grid-template-rows
+*grid-auto-columns
+*grid-auto-rows
+*grid-auto-flow
+*grid-template-areas
+*grid-template
+*grid-column-gap
+*grid-row-gap
+*grid-gap
+*grid
+
+Properti ini untuk itemsnya
+*justify-items
+*align-items
+*place-items
+*justify-content
+*align-content
+*place-content

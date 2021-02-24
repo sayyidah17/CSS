@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid / grid-alignment</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background-color:#ddd;
+    }
+    .container{
+        width: 80%;
+        margin:50px auto;
+        display:grid;
+        grid-template-rows:130px 130px 130px;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:5px;
+         /* element berada di samping kiri*/ 
+         /* justify-items:start; */
+         /* element berada di samping kanan*/
+         /* justify-items:end;  */
+         /* element berada di tengah */
+         /* justify-items:center; */
+        /* element akan melebar ke seluruh container apabila element tidak diberi width */
+        /* justify-content:stretch; */
+
+        /* align-items */
+        /* element berada di atas */
+        /* align-items:start; */
+        /* element berada di bawah */
+        /* align-items:end; */
+        /* element berada di tengah */
+        /* align-items:center; */
+        /*  sifatnya seperti stretch pada justify items, akan tetapi yang mempengaruhi ialah height */
+        /* align-items:stretch; */
+
+        /* place-items */
+
+        /* apabila kita ingin kedua sumbu berada di posisi yang sama cukup menuliskan 1 value saja */
+        place-items:center;
+
+
+    }
+    .item{
+        background-color:rgb(138,209,254);
+        border:5px solid black;
+        height:100px; 
+    }
+    .item:nth-child(even){
+        background-color:rgb(255,142,142);
+    }
+    .item.i1,
+    .item.i4,
+    .item.i7 {
+        width:130px;
+    }
+    .item.i2,
+    .item.i5,
+    .item.i8{
+        width:80px;
+    }
+    .item.i3,
+    .item,i6,
+    .item.i9{
+        width:170px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+        <div class="item i6">6</div>
+        <div class="item i7">7</div>
+        <div class="item i8">8</div>
+        <div class="item i9">9</div>
+    </div>
+</body>
+</html>

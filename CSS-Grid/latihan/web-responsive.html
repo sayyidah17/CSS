@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Rama</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font:16px/28px arial, sans-serif;
+            background-color: #eaeaea;
+            height:100%
+        }   
+        .container{
+            width:90%;
+            margin:auto;
+            background-color:#fff;
+            display:grid;
+            grid-template-areas:"header"
+                                "hero"
+                                "content"
+                                "footer";
+        }
+        .header{
+            grid-area:header;
+        }
+        .header nav .logo{
+            position:relative;
+        }
+        .header nav{
+            display:flex;
+            padding:20px 0;
+            align-items:center;
+            justify-content:space-around;
+            /*height:20px;*/
+        }
+        .header nav ul{
+            display:flex;
+            list-style:none;
+            width:30%;
+            justify-content:space-between;
+        }
+        .header nav ul li a{
+            text-decoration:none;
+            color:salmon;
+            font-size:0.8em;
+        }
+        .menu-toggle{                   
+            display:none;
+            flex-direction: column;
+            height:20px;
+            justify-content:space-between;   
+            /* background-color:black; */
+            /* display:none; */
+            position: relative;
+        }
+        .menu-toggle input{
+            position: absolute;
+            width:40px;
+            height:28px;
+            left:-6px;
+            top:-3px;
+            opacity:0;
+            cursor: pointer;
+            z-index:2;
+        }
+        .menu-toggle span{
+            display:block;
+            width:28px;
+            height:3px;
+            background-color:#000;
+            border-radius:3px;
+            transition:all 0.5s;
+        }
+         /*  Hamburger Menu Animation */
+        .menu-toggle span:nth-child(2){
+            transform-origin:0 0;
+        }
+        .menu-toggle span:nth-child(4){
+            transform-origin:0 100%;
+        }
+        .menu-toggle input:checked ~ span:nth-child(2){
+            transform:rotate(45deg) translate(-1px,-1px);
+        }
+        .menu-toggle input:checked ~ span:nth-child(4){
+            transform:rotate(-45deg) translate(-1px,0);
+        }
+        .menu-toggle input:checked ~ span:nth-child(3){
+            opacity:0;
+            transform:scale(0);
+        }
+        .hero{
+            grid-area:hero;
+             height:400px;
+             width:100%;
+            background:url(../img/2.jpg);
+            background-size:cover;
+            background-position:0 -100px;
+            border-top:5px solid salmon;
+            border-bottom:5px solid lightskyblue ;
+
+        }
+        .content{
+            /*width:100%;*/
+            grid-area:content;
+            display:grid;
+            grid-template-areas:"main sidebar sidebar";
+            grid-template-columns:60% 20%;
+        }
+        .main{
+            grid-area:main;
+            padding:20px;
+        }
+        .main .penulis{
+            font-size:11px;
+            margin-top:-5px;
+        }
+        .main .penulis a{
+            color:salmon;
+            text-decoration:none;
+        }
+        .main p{
+            margin-bottom:20px;
+            font-size:14px;
+            text-align:justify;
+        }
+        .sidebar{
+            grid-area:sidebar;
+            padding:20px;
+            justify-content-content:end
+        }
+        .sidebar h3{
+            font-size:15px;
+        }
+        .sidebar img{
+            width:100px;
+            float:left;
+            padding-right:10px;
+        }
+        .sidebar p{
+            font:12px/18px arial;
+            text-align:justify;
+        }
+        .footer{
+            background-color:#333;
+        }
+        .footer .copy{
+            color:#eaeaea;
+            text-align:center;
+            font-size: 12px;
+            padding:10px;
+        }
+        .footer{
+            grid-area:footer;
+        }
+
+        /*Responsive breoakpoint*/
+        @media screen and (max-width:1024px){
+            .header nav ul{
+                width:50%;
+            }
+        }
+        /*Ukuran Tablet*/
+        @media screen and (max-width:768px){
+            .header nav ul{
+                width:50%;
+            }
+            .hero{
+                background-position:0 0px;
+            }
+
+        }
+        /*Ukuran mobile*/
+        @media screen and (max-width:576px){
+            body{
+                height:100%; 
+            }
+            .container{
+                width:100%;
+            }
+            .hero{
+            background-position:0 0px;
+
+            }
+            .menu-toggle{
+             display:flex;
+            }
+            .content{
+                grid-area:content;
+                grid-template-areas:"main main main"
+                                    "sidebar sidebar sidebar";
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <div class="logo">
+                    <h4>Rama Fajar</h4>
+                </div>
+                <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Product</a></li>
+                      <li><a href="#">Service</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">About</a></li>
+                </ul>
+
+                 <div class="menu-toggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <div class="hero"></div>
+        <div class="content">
+            <div class="main">
+                <h2>Judul Artikel</h2>
+                 <p class="penulis">Ditulis oleh <a href="#">Rama Fajar</a>, Pada 5 Februari 2021.</p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nulla veniam deserunt debitis illo! Necessitatibus non consectetur impedit temporibus? Perferendis temporibus 
+                    cupiditate perspiciatis quasi tempora nam suscipit quod. Aliquam, veritatis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo error iure incidunt explicabo laudantium quam neque similique recusandae. 
+                    Veniam illo sequi dolorem dolores repudiandae, quod cumque sunt molestiae ut.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nulla veniam deserunt debitis illo! Necessitatibus non consectetur impedit temporibus? Perferendis temporibus 
+                    cupiditate perspiciatis quasi tempora nam suscipit quod. Aliquam, veritatis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nulla veniam deserunt debitis illo! Necessitatibus non consectetur impedit temporibus? Perferendis temporibus 
+                    cupiditate perspiciatis quasi tempora nam suscipit quod. Aliquam, veritatis.
+                </p>
+            </div>
+            <div class="sidebar">
+                 <h3>Tentang Penulis</h3>
+                <img src="../img/fajar.jpg" alt="Rama Fajar">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolores porro repudiandae quo beatae voluptatibus exercitationem? Nemo necessitatibus, molestias odit architecto 
+                    temporibus provident dolore ad rerum magnam nostrum! Voluptatem, ipsam.</p>
+            </div>
+        </div>
+        <div class="footer">
+          <p class="copy">Copyright 2021 Rama Fajar</p>
+        </div>
+    </div>
+     <script>
+        const menu=document.querySelector(".menu-toggle input");
+        const nav=document.querySelector("nav ul");
+        menu.addEventListener("click", function(){
+            nav.classList.toggle("slide");
+        })
+    </script>
+</body>
+</html>

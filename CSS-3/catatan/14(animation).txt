@@ -1,0 +1,10 @@
+syntax
+@keyframes [name]{
+    from{
+        [property-css]
+    }to{
+        [property-css]
+    }
+}
+
+animation:[name] [duration] [timing-function] [delay] [iteration-count:angka/iteration] [direction:normal(awal-akhir),reverse(akhir-awal),alternate(awal-akhir->akhir-awal),alternate-reverse(akhir-awal->awal-akhir)] [fill-mode:none,forwards,backwards,both] [play-state:running,paused]

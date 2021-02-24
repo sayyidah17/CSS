@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Rama</title>
+    <style>
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+                /**
+        * For modern browsers
+        * 1. The space content is one way to avoid an Opera bug when the
+        *    contenteditable attribute is included anywhere else in the document.
+        *    Otherwise it causes space to appear at the top and bottom of elements
+        *    that are clearfixed.
+        * 2. The use of `table` rather than `block` is only necessary if using
+        *    `:before` to contain the top-margins of child elements.
+        */
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+        .cf {
+            *zoom: 1;
+        }
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            font:16px/28px arial, sans-serif;
+            background-color: #eaeaea;
+        }
+        .container{
+            width:960px;
+            margin:auto;
+            background-color:#fff   ;
+        }
+        .header{
+            padding:20px;
+        }
+        .header .judul{
+            font-size:40px;
+            font-weight:bold;
+        }
+        .header ul li{
+            display: inline-block;
+            margin-top:20px;
+            margin-right:10px;
+        }
+        .header a{
+            text-decoration:none;
+            color:salmon;
+            padding:10px;
+        }
+
+        .header a:hover{
+            background-color: lightskyblue;
+            color:white
+        }
+        .hero{
+            height:400px;
+            background:url(img/2.jpg);
+            background-size:cover;
+            background-position:0 -100px;
+            border-top:5px solid salmon;
+            border-bottom:5px solid lightskyblue ;
+        }
+        .main{
+            width:600px;
+            padding:20px;
+            float:left;
+        }
+        .main h2{
+            font-size:32px;
+            font-weight:bold;
+        }
+        .main .penulis{
+            font-size:11px;
+            margin-top:-5px;
+        }
+        .main .penulis a{
+            color:salmon;
+            text-decoration:none;
+        }
+        .main p{
+            margin-bottom:20px;
+            font-size:14px;
+            text-align:justify;
+        }
+        .sidebar{
+            width:300px;
+            float:right;
+            padding:20px;
+        }
+        .sidebar h3{
+            font-weight:bold;
+            font-size:15px;
+        }
+        .sidebar img{
+            width:100px;
+            float:left;
+            padding-right:10px;
+        }
+        .sidebar p{
+            font:12px/18px arial;
+        }
+        .footer{
+            background-color:#333;
+        }
+        .footer .copy{
+            color:#eaeaea;
+            text-align:center;
+            font-size: 12px;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+          <h1 class="judul">Rama Fajar</h1>
+          <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">products</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">contact</a></li>
+          </ul>
+      </div>
+      <div class="hero"></div>
+
+      <div class="content cf">
+        <div class="main">
+            <h2>Judul Artikel</h2>
+            <p class="penulis">Ditulis oleh,<a href="#">Rama Fajar </a>Pada 5 Februari 2021.</p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nulla veniam deserunt debitis illo! Necessitatibus non consectetur impedit temporibus? Perferendis temporibus 
+                cupiditate perspiciatis quasi tempora nam suscipit quod. Aliquam, veritatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo error iure incidunt explicabo laudantium quam neque similique recusandae. 
+                Veniam illo sequi dolorem dolores repudiandae, quod cumque sunt molestiae ut.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nulla veniam deserunt debitis illo! Necessitatibus non consectetur impedit temporibus? Perferendis temporibus 
+                cupiditate perspiciatis quasi tempora nam suscipit quod. Aliquam, veritatis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nulla veniam deserunt debitis illo! Necessitatibus non consectetur impedit temporibus? Perferendis temporibus 
+                cupiditate perspiciatis quasi tempora nam suscipit quod. Aliquam, veritatis.
+            </p>
+        </div>
+        
+        <div class="sidebar">
+            <h3>Tentang Penulis</h3>
+            <img src="img/fajar.jpg" alt="Rama Fajar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolores porro repudiandae quo beatae voluptatibus exercitationem? Nemo necessitatibus, molestias odit architecto 
+                temporibus provident dolore ad rerum magnam nostrum! Voluptatem, ipsam.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+          <p class="copy">Copyright 2021 Rama Fajar</p>
+      </div>
+  </div>  
+</body>
+</html>

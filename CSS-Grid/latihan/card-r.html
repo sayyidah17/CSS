@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS Grid</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:arial;
+            background-color: #1d2d50;
+        }
+        .container{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fill, minmax(300px, 1fr ));
+            gap:20px;
+            padding:15px
+        }
+        img{
+            width:100%;
+            border-radius:10px 10px 0 0;
+        }
+        .cards{
+            width:100%;
+            background-color:#133b5c;
+            border-radius:10px;
+        }
+        .cards .isi{
+            padding:10px;
+        }
+        .cards .isi h3{
+            color:rgb(235, 233, 233);
+        }
+        .cards .isi p{
+            margin-top:10px;
+            text-align:justify;
+        }
+        .cards .isi button{
+            background-color:#6c757d;
+            border:none;
+            padding:10px;
+            border-radius:5px;
+            color:white;
+            margin-top:5px;
+            text-align:center;
+            cursor: pointer;
+        }
+        .cards .isi button:hover{
+            background-color: #7e8388;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <img src="img/jakarta.jpg" alt="">
+            <div class="isi">
+                <h3 class="judul">DKI Jakarta</h3>
+                <p class="teks">
+                    Jakarta adalah ibukota negara Indonesia yang terletak di antara provinsi Banten
+                    dan Jawa Barat. Makanan khas kota jakarta...
+                </p>
+                <button>See Details</button>
+            </div>
+        </div>
+
+         <div class="cards">
+            <img src="img/jakarta.jpg" alt="">
+            <div class="isi">
+                <h3 class="judul">Judul </h3>
+                <p class="teks">
+                    Jakarta adalah ibukota negara Indonesia yang terletak di antara provinsi Banten
+                    dan Jawa Barat...
+                </p>
+                <button>See Details</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="img/jakarta.jpg" alt="">
+            <div class="isi">
+                <h3 class="judul">Judul </h3>
+                <p class="teks">
+                    Jakarta adalah ibukota negara Indonesia yang terletak di antara provinsi Banten
+                    dan Jawa Barat...
+                </p>
+                <button>See Details</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="img/jakarta.jpg" alt="">
+            <div class="isi">
+                <h3 class="judul">Judul </h3>
+                <p class="teks">
+                    Jakarta adalah ibukota negara Indonesia yang terletak di antara provinsi Banten
+                    dan Jawa Barat...
+                </p>
+                <button>See Details</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

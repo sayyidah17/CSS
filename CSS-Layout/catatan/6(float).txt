@@ -1,0 +1,16 @@
+Float
+
+Float merupakan properti pada CSS untuk mengatur posisi sebuah elemen. Sebuah elemen dapat 
+dipaksa untuk berada di sebelah kiri atau kanan dari parent/pembungkusnya dengan menggunakan properti ini.
+
+float:none (default), left, right;
+
+Yang bisa dilakukan menggunakan properti float
+
+*text wrapping
+ membuat teks mengelilingi gambar/elemen lain
+*image gallery
+ membuat serangkaian gambar menjadi galeri
+*multi-column layout
+ membuat halaman memiliki beberapa kolom
+

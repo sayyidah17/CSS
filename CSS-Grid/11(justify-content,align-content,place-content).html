@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid / grid justify-content,align-content,place-content</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background-color:#ddd;
+    }
+    .container{
+        width: 80%;
+        margin:50px auto;
+        display:grid;
+        grid-template-columns:120px 120px 120px;
+        grid-template-rows:80px 80px;
+        gap:5px;
+
+        /*  start,end,center,stretch sama seperti justify-items  */
+         /*justify-content:start; */
+         justify-content:end; 
+        /* justify-content:center; */
+        /* justify-content:stretch; */
+
+        /* semua elemennya menyebar, namu kiri dan kanannya selalu setengah dari tengah-tengahnya */
+        /* justify-content:space-around; */
+        /*kiri dan kanan menempel sedangkan sisanya berada di tengah-tengah*/
+        /* justify-content:space-between; */
+        /* Semua elemennya menyebar dengan ukuran yang sama */
+        /* justify-content:space-evenly; */
+
+        /* Sama seperti justify */
+        /* align-content:start; */
+        /* align-content:end; */
+        /* align-content:center; */
+        /* align-content:stretch; */
+        /* align-content:space-around; */
+        /*align-content:space-between;*/
+        /* align-content:space-evenly; */
+        
+    }
+    .item{
+        width:100px;
+        height:50px;
+        background-color:rgb(138,209,254);
+        border:5px solid black;
+    }
+    .item:nth-child(even){
+        background-color:rgb(255,142,142);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>

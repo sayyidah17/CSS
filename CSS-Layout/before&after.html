@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element | before&after</title>
+    <style>
+        /* div{
+            width:100px;
+            height:100px;
+            background-color:lightblue;
+            font-size:12px;
+            margin:20px auto;
+            line-height:100px;
+            text-align:center;
+            position: relative;
+        } */
+        /* div::before{
+            content:"Hi,"
+        }
+        div::after{
+            content:"World";
+        } */
+        /* div::before,
+        div::after{
+            content:"";
+            width:30px;
+            height:30px;
+            position:absolute;
+        }
+        div::before{
+            top:-15px;
+            left:-15px;
+            background-color:salmon;
+        }
+        div::after{
+            right:-15px;
+            bottom:-15px;
+            background-color:lightgreen;
+        } */
+
+        /* Penggunaan before&after */
+
+        /* 1.Image Icon */
+        /* h1::before{
+            content:url(img/book.png);
+        } */
+        /* Apabila ingin diresize */
+        /* h1::before{
+            content:"";
+            display:block;
+            background:url(img/book.png) no-repeat;
+            background-size:20px;
+            width:20px;
+            height:20px;
+            float:left;
+            margin:8px 5px 0 0;
+        } */
+
+        /* 2.Glyph icon */
+/* 
+        @font-face {
+                font-family:"Glyphicons";
+            src: url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff");
+        }
+        i{
+            position: relative;
+            top:1px;
+            display:inline-block;
+            font:normal normal 16px/1 "Glyphicons";
+            -moz-osx-font-smoothing:grayscale;
+            -webkit-font-smoothing:antialiased;
+            margin-right:4px;
+        }
+        i::before{
+            content: "\e104";
+        } */
+        /* 3.Breadcrumbs (navigasi)*/
+        /* a{
+            text-decoration: none;
+            font-family: arial;
+            font-weight:bold;
+            color:#000;
+        }
+        a::after{
+            content: "/";
+        }
+        a::first-child::before{
+            content:"::";
+        }
+        a::last-child::after{
+            content:"";
+        } */
+
+        /* Quoting */
+        /* blockquote{
+            font-family:georgia;
+            font-size:20px;
+            font-style:italic;
+            margin-top:50px;
+            line-height:1.4em;
+            position: relative;
+        }
+        blockquote::before,
+        blockquote::after{
+            content:open-quote;
+            font-size:60px;
+            color:#999;
+            line-height: 0;
+            position:relative;
+            top:20px;
+        }
+        blockquote::after{
+            content:close-quote ;
+        } */
+
+        /*  Bubble Text */
+        h2{
+            float:left;
+            width:170px;
+        }
+        div{
+            float:left;
+            width:200px;
+            background:#727272;
+            padding:10px;
+            border-radius:6px;
+            color:#fff;
+            position: relative;
+            font-size:12px;
+            line-height:20px;
+        }
+        div::before{
+            content: "";
+            display:block;
+            width:0;
+            height:0;
+            border-top:12px solid transparent;
+            border-bottom:12px solid transparent;
+            border-right:12px solid #727272;
+            position: absolute;
+            top:16px;
+            left:-12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        Hello
+    </div> -->
+    
+    <!-- <h1>Book</h1> -->
+
+    <!-- <i>Home</i> -->
+
+    <!-- <p>
+        <a href="#">Home</a>
+        <a href="#">Tim</a>
+        <a href="#">Programmer</a>
+    </p> -->
+
+    <!-- <blockquote>
+        Bermimpilah setinggi langit.. Jika engkau jatuh, engkau akan jatuh
+        di antar bintang-bintang
+    </blockquote>
+    <p>-Ir.Soekarno</p> -->
+
+    <h2>Apa itu CSS?</h2>
+    <div>
+        CSS (Cascading Style Sheet) adalaha bahasa yang digunakan untuk merepresentasikan presentasi 
+        dari sebuah dokumen yang ditulis dalam bahasa markup.
+    </div>
+</body>
+</html>

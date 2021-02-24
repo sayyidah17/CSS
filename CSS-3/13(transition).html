@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width:900px;
+            margin:10px auto;
+            border:5px solid black;
+        }
+        .kotak{
+            width:100px;
+            height:100px;
+            background:salmon;
+            line-height:100px;
+            text-align:center;
+            /* 
+              Secara default css menuliskan transition:all walau kita hanya menuliskan transition:1s saja.
+              Kita juga bisa mengtransisi properti sesuai yang kita mau
+             */
+            /* transition:all 1s ease; */
+            /* value delay
+              script di bawah artinya kita menunggu dulu selama 2 detik baru css akan berjalan
+              Delay juga bisa digunakan untuk multiple transition, sama seperti transform
+            */
+            transition:margin-left 3s, transform 3s 2s, background-color 2s 3s;
+        }
+        .kotak1{
+            transition:1s ease;
+        }
+        .kotak2{
+            transition:1s ease-in;
+        }
+        .kotak3{
+            transition:1s ease-out;
+        }
+        .kotak4{
+            transition: 1s ease-in-out;
+        }
+        .kotak5{
+           transition:1s linear;
+        }
+        .kotak6{
+            transition:1s cubic-bezier(0,1.43,.61,1.53);
+        }
+        .container:hover .kotak{
+            transform: rotate(720deg);
+            margin-left:800px;
+            background-color:royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak"></div>
+        <!-- <div class="kotak kotak1">ease</div>
+        <div class="kotak kotak2">ease-in</div>
+        <div class="kotak kotak3">ease-out</div>
+        <div class="kotak kotak4">ease-in-out</div>
+        <div class="kotak kotak5">linear</div>
+        <div class="kotak kotak6">cubic bezier</div> -->
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+Special functions and keywords
+
+repeat()
+
+Menentukan ukuran grid track secara berulang
+
+syntax
+grid-template-columns:repeat(9, 1fr);
+
+Bisa untuk multirepeat
+grid-template-columns:repeat(4,1fr) repeat(5,1.5fr);
+
+min-content & max-content
+
+Menentukan seberapa besar ukuran grid track
+berdasarkan content pada sebuah item
+
+auto-fill dan auto-fit
+
+Menentukan jumlah item untuk berada pada grid track
+
+grid-template-columns:repeat(auto-fill | auto-fit,100px);
+
+minmax()
+
+Menentukan ukuran minimal dan maksimal dari grid track
+
+grid-template-columns:minmax(200px,300px)

@@ -1,0 +1,33 @@
+Padding 
+ 
+padding adalah area transparan di dalam kotak (antara content dan border)
+
+padding tidak bisa diberi nilai negatif
+padding tidak bisa diberi nilai auto
+padding menambahkan ukuran elemen
+
+Border
+
+Border adalah  batas di sekeliling content dan padding
+border juga dapat menambahkan ukuran elemen
+border:width style color;
+
+style 
+
+solid
+dotted
+dashed
+double 
+
+Box-sizing
+
+Box-sixing berfungsi untuk menyesuaikan ukuran apabila elemennya terdapat padding dan border
+
+
+*catatan
+
+Sebaiknya apabila kita membuat element yang hanya diberi width saja tanpa height. 
+Karena jika diberi height apabila kontennya tidak sesuai tingginya maka kontennya akan keluar.
+
+Jika diberi width saja apabila kontennya tidak sesuai dengan widthnya maka ukuran lebar elemennya akan
+menyesuaikan kontennya

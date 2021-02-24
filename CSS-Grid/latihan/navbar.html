@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Navbar</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family:sans-serif;
+            overflow-x:hidden;
+        }
+        /* Navbar */
+        nav{
+            display:flex;
+            background-color:rgb(180,78,232);
+            justify-content:space-around;
+            padding:20px 0;
+            color:rgb(234,192,255);
+            height:20px;
+            align-items:center;
+        }
+        nav ul{
+            display:flex;
+            list-style:none;
+            width:30%;
+            justify-content:space-between;
+        }
+        nav ul li a{
+            text-decoration:none;
+            color:rgb(234,192,255);
+            font-size: 0.8em;
+        }
+        nav ul li a:hover{
+            color:rgb(250,240,255);
+        }
+        /* Hamburger Menu */
+        .menu-toggle{
+            display:none;
+            flex-direction: column;
+            height:20px;
+            justify-content:space-between;
+            /* background-color:black; */
+            /* display:none; */
+            position: relative;
+        }
+        .menu-toggle input{
+            position: absolute;
+            width:40px;
+            height:28px;
+            left:-6px;
+            top:-3px;
+            opacity:0;
+            cursor: pointer;
+            z-index:2;
+        }
+        .menu-toggle span{
+            display:block;
+            width:28px;
+            height:3px;
+            background-color:rgb(234,192,255);
+            border-radius:3px;
+            transition:all 0.5s;
+        }
+
+        /*  Hamburger Menu Animation */
+        .menu-toggle span:nth-child(2){
+            transform-origin:0 0;
+        }
+        .menu-toggle span:nth-child(4){
+            transform-origin:0 100%;
+        }
+        .menu-toggle input:checked ~ span:nth-child(2){
+            transform:rotate(45deg) translate(-1px,-1px);
+        }
+        .menu-toggle input:checked ~ span:nth-child(4){
+            transform:rotate(-45deg) translate(-1px,0);
+        }
+        .menu-toggle input:checked ~ span:nth-child(3){
+            opacity:0;
+            transform:scale(0);
+        }
+        /* Responsive Breakpoint */
+        /* ukuran tablet */
+        @media screen and (max-width:768px) {
+            nav ul{
+                width:50%;
+            }
+        }
+
+        /* ukuran mobile */
+        @media screen and (max-width:576px){
+            .menu-toggle {
+                display:flex;
+            }
+            nav ul{
+                position:absolute;
+                right:0;
+                top:0;
+                width:80%;
+                height:100vh;
+                justify-content:space-evenly;
+                flex-direction:column;
+                align-items:center;
+                background-color:rgb(180,78,232);
+                z-index:-1;
+                transform:translateX(100%);
+                transition:all 1s;
+                margin-top:10%;
+            }
+            nav ul.slide{
+                transform:translateX(0);
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Rama Fajar</h4>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <script>
+        const menu=document.querySelector(".menu-toggle input");
+        const nav=document.querySelector("nav ul");
+        menu.addEventListener("click", function(){
+            nav.classList.toggle("slide");
+        })
+    </script>
+</body>
+</html>

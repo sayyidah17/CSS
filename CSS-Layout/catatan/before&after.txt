@@ -1,0 +1,19 @@
+::before&
+::after
+
+Sebuah pseudo-element yang memungkinkan kita untuk menambahkan konten (sebelum/sesudah elemen)
+pada halaman HTML hanya melalui CSS saja (tanpa harus menambahkannya pada kode HTML).
+
+String
+content:"tulisan";
+Bisa berupa tulisan atau entitas unicode, yang biasanya digunakan untuk icon/glyph.
+Image
+content:url(path/ke/gambar.jpg);
+Bisa berupa gambar yang tidak dapat di-resize,
+atau bisa juga berupa gradient.
+Kosong
+content:"";
+Berguna jika akan membuat sebuah elemen baru yang tidak ada tulisannya atau melakukan clearfix
+Counter
+content:counter(item);
+Berguna untuk memberi style pada list

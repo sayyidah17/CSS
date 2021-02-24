@@ -1,0 +1,45 @@
+Grid Alignment
+
+justify-items
+
+Mensejajarkan grid-items pada sumbu horizontal
+
+syntax
+
+justify-items:start | end | center | stretch(default);
+
+align-items
+
+Mensejajarkan grid-items pada sumbu vertikal
+
+align-items:start | end | center | stretch(default);
+
+place-items
+
+Shorthand untuk menulis justify-items dan align-items dalam satu deklarasi
+
+syntax 
+place-items:<align-items> <justify-items>;
+
+Justify content
+Mengatur posisi seluruh grid container pada sumbu horizontal.
+Ini bisa dilakukan ketika ukuran total grid lebih kecil dari
+ukuran containernya, biasanya ketika grid itemsnya menggunakan ukuran
+yang fixed (px)
+
+syntax
+justify-content:start | end | center | stretch | space-around | space-between | space-evenly;
+
+align content
+
+Sama seperti justify-content, namun align-content untuk mengubah sumbu vertikal
+
+syntax
+align-content:start | end | center | stretch | space-around | space-between | space-evenly;
+
+Place content
+
+Shorthand untuk menulis justify-content dan align-content dalam satu deklarasi
+
+syntax
+place-items:<align-content> <justify-content>;

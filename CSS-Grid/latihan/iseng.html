@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS Grid</title>
+    <style>
+        .container{
+            display:grid;
+            width:100%;
+            grid-template-columns:repeat(auto-fill,20px);
+            grid-template-rows:repeat(10,20px);
+            justify-content:center;
+        }
+        .item{
+            background-color:lightblue;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .satu{
+            grid-row:1 / 8;
+        }
+        .dua{
+            grid-column:2/5;
+        }
+        .tiga{
+            grid-column:4;
+            grid-row:2/5;
+        }
+        .empat{
+            grid-row:4;
+            grid-column:2/4;
+        }
+        .lima{
+            grid-row:5;
+            grid-column:3;
+        }
+        .enam{
+            grid-row:6;
+            grid-column:3;
+        }
+        .tujuh{
+            grid-row:7;
+            grid-column:4;
+        }
+        .delapan{
+            grid-row:8;
+            grid-column:5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item satu">1</div>
+        <div class="item dua">2</div>
+        <div class="item tiga">3</div>
+        <div class="item empat">4</div>
+        <div class="item lima">5</div>
+        <div class="item enam">6</div>
+        <div class="item tujuh">7</div>
+        <div class="item delapan">8</div>
+    </div>
+</body>
+</html>

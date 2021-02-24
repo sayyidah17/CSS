@@ -1,0 +1,117 @@
+margin
+ area transparan di sekitar kotak (di luar border)
+
+Overlapping margin
+ Overlapping margin adalah sebuah peristiwa di mana dua margin saling bertemu atau terdapat 2 margin
+     Contoh:
+     .satu{
+         width:200px;
+         height:200px;
+         background:salmon;
+         margin-bottom:150px;
+     }
+     .dua{
+         margin-bottom:50px;
+         width:200px;
+         height:200px;
+         background:lightblue;
+     }
+
+     Secara logika bila digabungkan margin tersebut menjadi 200px, namun karena pertemuan
+     ke dua margin tersebut secara vertikal(menurun) maka yang dipilih ialah margin yang paling besar ukurannya
+     yaitu margin-bottom milik elemen satu.
+
+     Pertemuan 2 margin bisa digabungkan apabila pertemuan tersebut secara horizontal. 
+     Contoh:
+     div{
+         display-inline-block;
+     }
+     .satu{
+         width:200px;
+         height:200px;
+         background:salmon;
+         margin-right:50px;
+     }
+     .dua{
+         width:200px;
+         height:200px;
+         background:lightblue;
+         margin-left:150px;
+     }
+     
+     Dilihat dari syntax css di atas, Overlapping margin dapat dijalankan ketika pertemuan 2 margin
+     secara horizontal. Margin milik element satu dapat ditambah dengan margin element dua, sehingga
+     ukuran margin tersebut menjadi 200px;
+     
+     Perlu diketahui
+
+     Jika suatu element memiliki margin-right:0, maka element tersebut tidak memiliki jarak alias berdempet
+     dengan elementnya. Namun hal itu tidak berlaku apabila suatu element memiliki display:inline-block
+
+     Contoh:
+     div{
+         display-inline-block;
+     }
+     .satu{
+         width:200px;
+         height:200px;
+         background:salmon;
+         margin-right:0px;
+     }
+     .dua{
+         width:200px;
+         height:200px;
+         background:lightblue;
+     }
+     
+     Syntax css di atas memiliki element div yang displaynya memiliki value inline-block dan elemen
+     class satu memiliki margin-right:0. Seharusnya antara element class satu dengan class dua tidak memiliki jarak
+     namun memiliki jarak walau hanya 1px saja. Hal ini terjadi karena element htmlnya memiliki spasi, bisa 
+     dilihat di bawah ini:
+     <div class="satu">1</div>
+     <div class="dua"> 2</div>
+     <div class="tiga">3</div>
+     Namun apabila ingin elemennya tidak memiliki jarak, maka jangan diberi spasi.
+     Seperti elemen di bawah ini:
+     <div class="satu">1</div><div class="dua"> 2</div><div class="tiga">3</div>
+
+     Negative margin
+
+     Negative margin adalah margin dengan value minus/negatif yang marginnya dapat membuat elementnya
+     berlawanan arah dari property margin asalnya
+
+     Contoh:
+     .satu{
+         width:200px;
+         height:200px;
+         background:salmon;
+         margin-bottom:30px;
+     }
+     .dua{
+         width:200px;
+         height:200px;
+         background:lightblue;
+         margin-top:-50px;
+     }
+     
+     Pada syntax css di atas terjadi Overlapping margin, namun karena adanya negative margin jadinya yang
+     dipilih ialah margin-top punya elemen class dua. Seharusnya elemen class dua turun ke bawah karena
+     terdapat margin-top, namun margin-top tersebut bernilai negative jadinya element tersebut naik ke atas
+     berlawanan dengan property marginnya.
+
+     margin auto
+
+     Margin auto adalah margin untuk margin-left dan margin-right yang di mana css membuat element
+     berada di tengah secara otomatis sesuai browser atau parentnya. Untuk membuat element berada di tengah margin-left dan margin-rightnya 
+     harus auto.
+
+     Shorthand
+
+     margin:50px;
+     all margin=50px;
+     margin:50px       auto;
+     <top,bottom>,<right left>
+     margin:30px 50px 30px;
+        <top>,<right left>, <bottom>
+     margin:30px 50px 30px 50px;
+         <top>,<right>,<bottom>,<left>
